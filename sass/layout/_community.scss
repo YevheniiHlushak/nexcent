@@ -1,0 +1,42 @@
+.community__title{
+    padding-left: 305px;
+    padding-right: 305px;
+
+}
+
+.community__list{
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+
+}
+
+.community__card {
+   flex-basis: calc((100% - 260px) / 3);
+   height: 260px;
+   padding: 24px;
+   border-radius: 8px;
+   box-shadow: 0px 2px 4px 0px #abbed133;
+}
+
+.community__card--center{
+    height: 280px;
+}
+
+.community__card-icon {
+    margin-bottom: 16px;
+}
+
+.community__card-title {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: calc(36 / 28);
+    color: var(--primary-title-color);
+}
+
+.community__card-description {
+    font-size: var(--primary-text-size);
+    line-height: calc(20 / 14);
+    color: var(--primary-text-color);
+}
