@@ -3,6 +3,11 @@
   width: 748px;
 }
 
+.customers__img{
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .customers__text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -85,6 +90,7 @@
 .customers__link {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 20px;
   font-weight: 600;
   line-height: calc(28 / 20);
