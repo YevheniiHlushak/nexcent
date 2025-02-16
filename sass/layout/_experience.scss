@@ -1,0 +1,23 @@
+.section__experience{
+    padding-bottom: 48px;
+}
+
+.experience__thumb{
+    width: 680px;
+    margin-left: 50px;
+}
+.experience__title{
+    margin-bottom: 16px;
+    width: 510px;
+    font-weight: 600;
+}
+.experience__subtitle{
+margin-bottom: 32px;
+font-size: var(--primary-text-size);
+line-height: calc(20 / 14);
+}
+
+.experience__btn {
+    width: 151px;
+    height: 52px;
+}

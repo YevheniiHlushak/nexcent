@@ -6,7 +6,7 @@
 }
 @media screen and (min-width: 1200px) {
   ._container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -19,13 +19,43 @@
           align-items: center;
 }
 
+.btn {
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--alternate-text-color);
+  -webkit-transition: color var(--transition-time-and-func), background-color var(--transition-time-and-func);
+  transition: color var(--transition-time-and-func), background-color var(--transition-time-and-func);
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  color: var(--accent-color);
+  background-color: var(--dark-bg-color);
+}
+
 .accent {
   color: var(--accent-color);
 }
 
 .section {
   padding-top: 40px;
-  text-align: center;
+}
+
+.section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section__title {
@@ -83,24 +113,6 @@ button {
   --header-nav-text-color: #18191F;
   --dark-bg-color: #F5F7FA;
   --transition-time-and-func: 250ms cubic-bezier(.21,.69,.83,.34);
-}
-
-.hero__btn, .signup-btn {
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: center;
-  border: 1px solid var(--accent-color);
-  background-color: var(--accent-color);
-  color: var(--alternate-text-color);
-  -webkit-transition: color var(--transition-time-and-func), background-color var(--transition-time-and-func);
-  transition: color var(--transition-time-and-func), background-color var(--transition-time-and-func);
-  cursor: pointer;
-}
-.hero__btn:hover, .signup-btn:hover, .hero__btn:focus, .signup-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--dark-bg-color);
 }
 
 .header {
@@ -191,20 +203,9 @@ button {
   background-color: var(--dark-bg-color);
 }
 
-.hero--container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .hero__title {
   margin-bottom: 16px;
+  padding-right: 25px;
   font-size: 64px;
   font-weight: 600;
   line-height: 1.1875;
@@ -216,7 +217,12 @@ button {
 }
 
 .hero__btn {
-  padding: 14px 32px;
+  width: 128px;
+  height: 52px;
+}
+
+.clients__section {
+  text-align: center;
 }
 
 .clients__list {
@@ -257,6 +263,10 @@ button {
   border: 2px solid var(--accent-color);
 }
 
+.community__section {
+  text-align: center;
+}
+
 .community__title {
   padding-left: 305px;
   padding-right: 305px;
@@ -269,14 +279,14 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 130px;
-     -moz-column-gap: 130px;
-          column-gap: 130px;
+  -webkit-column-gap: 136px;
+     -moz-column-gap: 136px;
+          column-gap: 136px;
 }
 
 .community__card {
-  -ms-flex-preferred-size: calc((100% - 260px) / 3);
-      flex-basis: calc((100% - 260px) / 3);
+  -ms-flex-preferred-size: calc((100% - 272px) / 3);
+      flex-basis: calc((100% - 272px) / 3);
   height: 260px;
   padding: 24px;
   border-radius: 8px;
@@ -294,6 +304,7 @@ button {
 
 .community__card-title {
   margin-bottom: 8px;
+  padding: 0 10px;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2857142857;
@@ -302,8 +313,39 @@ button {
 
 .community__card-description {
   font-size: var(--primary-text-size);
+  text-align: top left;
   line-height: 1.4285714286;
   color: var(--primary-text-color);
+}
+
+.community__card-description--center {
+  padding: 0 10px;
+}
+
+.section__experience {
+  padding-bottom: 48px;
+}
+
+.experience__thumb {
+  width: 680px;
+  margin-left: 50px;
+}
+
+.experience__title {
+  margin-bottom: 16px;
+  width: 510px;
+  font-weight: 600;
+}
+
+.experience__subtitle {
+  margin-bottom: 32px;
+  font-size: var(--primary-text-size);
+  line-height: 1.4285714286;
+}
+
+.experience__btn {
+  width: 151px;
+  height: 52px;
 }
 
 .footer {
