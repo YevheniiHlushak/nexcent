@@ -1,0 +1,21 @@
+:root {
+    //text
+    --primary-text-size: 14px;
+    --secondary-text-size: 16px;
+    --title-font-weight: 500;
+
+
+    //color
+    --primary-text-color: #717171;
+    --alternate-text-color: #FFFFFF;
+    --footer-text-color: #F5F7FA;
+    --primary-title-color: #4D4D4D;
+    --accent-color: #4CAF4F;
+    --client-icon-hover: #5417D7;
+    --header-logo-color: #263238;
+    --header-nav-text-color: #18191F;
+    --dark-bg-color: #F5F7FA;
+
+    //effects
+    --transition-time-and-func: 250ms cubic-bezier(.21,.69,.83,.34);
+}

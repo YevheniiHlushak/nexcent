@@ -1,0 +1,19 @@
+%btn {
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  text-align: center;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--alternate-text-color);
+  transition: color var(--transition-time-and-func),
+    background-color var(--transition-time-and-func);
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--dark-bg-color);
+  }
+}

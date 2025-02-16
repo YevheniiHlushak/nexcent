@@ -1,0 +1,29 @@
+.hero {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--dark-bg-color);
+}
+
+.hero--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__title {
+  margin-bottom: 16px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: calc(76 / 64);
+  color: var(--primary-title-color);
+}
+
+.hero__subtitle {
+    margin-bottom: 32px;
+}
+
+.hero__btn{
+    @extend %btn;
+    padding: 14px 32px;
+    
+}
