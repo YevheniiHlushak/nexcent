@@ -1,0 +1,26 @@
+.demo__title {
+  width: 887px;
+  margin: 0 auto 32px auto;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: calc(76 / 64);
+  text-align: center;
+  color: #263238;
+}
+
+.demo__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 178px;
+}
+
+.demo__icon {
+  margin-left: 8px;
+
+  .demo__btn:hover &{
+        stroke: var(--accent-color);
+  }
+}
