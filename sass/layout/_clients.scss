@@ -3,15 +3,13 @@
 }
 
 .clients__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  column-gap: calc(((100% - (6 * 49.5px) )/ 5));
 }
 
 .clients__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
   border: 1px solid transparent;
   border-radius: 4px;
   transition: transform var(--transition-time-and-func);
@@ -23,12 +21,11 @@
 }
 
 .clients__icon {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
   transition: border var(--transition-time-and-func);
-    .clients__link:hover &,
-    .clients__link:focus & {
-      border: 2px solid var(--accent-color);
-    }
- 
+  .clients__link:hover &,
+  .clients__link:focus & {
+    border: 1px solid var(--accent-color);
+  }
 }

@@ -1,0 +1,108 @@
+.customers__wrapper {
+  margin-left: 78px;
+  width: 748px;
+}
+
+.customers__text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  color: var(--primary-text-color);
+}
+
+.customers__author {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: var(28 / 20);
+  color: var(--accent-color);
+}
+
+.customers__position {
+  margin-bottom: 32px;
+  font-size: var(--secondary-text-size);
+  line-height: var(24 / 16);
+  color: var(--primary-text-color);
+}
+
+.customers__thumb {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.customers__list {
+  margin-right: 32px;
+  width: 493px;
+  justify-content: space-between;
+}
+
+.customers__btn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  border-radius: 8px;
+  transition: background-color var(--transition-time-and-func);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e8f5e9;
+  }
+}
+
+.icon--1,
+.icon--2,
+.icon--5 {
+  transition: transform var(--transition-time-and-func);
+  .customers__btn:hover &,
+  .customers__btn:focus &,
+  .customers__btn:active & {
+    transform: translate(-4px, -4px);
+  }
+}
+
+.icon--3,
+.icon--6 {
+  transition: transform var(--transition-time-and-func);
+  .customers__btn:hover &,
+  .customers__btn:focus &,
+  .customers__btn:active & {
+    transform: translateY(-4px);
+  }
+}
+
+.icon--4 {
+  transition: transform var(--transition-time-and-func);
+  .customers__btn:hover &,
+  .customers__btn:focus &,
+  .customers__btn:active & {
+    transform: translate(-1px, -4px);
+  }
+}
+
+.customers__link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: calc(28 / 20);
+  color: var(--accent-color);
+  transition: transform var(--transition-time-and-func);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+.icon-arrow {
+  margin-left: 8px;
+  transition: transform var(--transition-time-and-func);
+
+  .customers__link:hover &,
+  .customers__link:focus & {
+    transform: scale(1.3);
+  }
+}
