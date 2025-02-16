@@ -36,6 +36,7 @@
 }
 
 .section__subtitle {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
@@ -214,4 +215,47 @@ button {
 
 .hero__btn {
   padding: 14px 32px;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: -webkit-transform var(--transition-time-and-func);
+  transition: -webkit-transform var(--transition-time-and-func);
+  transition: transform var(--transition-time-and-func);
+  transition: transform var(--transition-time-and-func), -webkit-transform var(--transition-time-and-func);
+}
+.clients__link:hover, .clients__link:focus {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.clients__icon {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: border var(--transition-time-and-func);
+  transition: border var(--transition-time-and-func);
+}
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+  border: 2px solid var(--accent-color);
+}
+
+.footer {
+  height: 100px;
+  background-color: gray;
 }/*# sourceMappingURL=main.css.map */
