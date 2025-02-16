@@ -1,4 +1,112 @@
-.footer{
-    height: 100px;
-    background-color: gray;
+.footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  background-color: #263238;
+}
+
+.footer__container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom: 40px;
+}
+
+.footer__copyright {
+  margin-bottom: 40px;
+  font-size: var(--primary-text-size);
+  line-height: calc(20 / 14);
+  color: var(--dark-bg-color);
+}
+
+.socials__list {
+  display: flex;
+  gap: 16px;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #3c474c;
+}
+
+.socials__icon {
+  fill: #ffffff;
+  transition: fill var(--transition-time-and-func);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.footer__thumb-title {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: calc(28 / 20);
+  color: #ffffff;
+}
+
+.footer__thumb-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer__thumb-link {
+  font-size: var(--primary-text-size);
+  line-height: calc(20 / 14);
+  color: var(--dark-bg-color);
+  transition: color var(--transition-time-and-func);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.subscribe {
+  position: relative;
+  height: 92px;
+}
+
+.label {
+  display: block;
+}
+
+.subscribe__input {
+  display: block;
+  width: 255px;
+  height: 40px;
+  padding: 10px 0 10px 12px;
+  font-size: var(--primary-text-size);
+    line-height: calc(20 / 14);
+    color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  &::placeholder {
+    font-size: var(--primary-text-size);
+    line-height: calc(20 / 14);
+    color: #d9dbe1;
+  }
+}
+
+.submit__btn {
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  fill: #d9dbe1;
+  cursor: pointer;
+  transition: fill var(--transition-time-and-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color)
+  }
 }
