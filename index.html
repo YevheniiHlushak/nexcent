@@ -16,11 +16,8 @@
     <header class="header">
       <div class="_container header--container">
         <a href="/" class="logo header__logo">
-          <svg class="logo__icon" width="35" height="24">
-            <use href="./img/icons.svg#icon-logo"></use>
-          </svg>
-          <svg class="logo__text" width="111" height="24">
-            <use href="./img/icons.svg#icon-nexcent"></use>
+          <svg class="header__icon" width="154" height="24">
+            <use href="./img/icons.svg#icon-header-logo"></use>
           </svg>
         </a>
         <nav class="nav__menu">
@@ -446,14 +443,133 @@
           <button type="button" class="btn demo__btn">
             Get a Demo
             <svg class="demo__icon" width="16" height="16">
-              <use  href="./img/icons.svg#icon-arrow-white"></use>
+              <use href="./img/icons.svg#icon-arrow-white"></use>
             </svg>
           </button>
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
-      <h2>I'm footer!</h2>
+      <div class="_container footer__container">
+        <!-- logo & socials -->
+        <div class="footer__thumb--left">
+          <a href="/" class="logo footer__logo">
+            <svg class="footer__icon" width="154" height="24">
+              <use href="./img/icons.svg#icon-footer-logo"></use>
+            </svg>
+          </a>
+          <p class="footer__copyright">
+            Copyright &#169; 2020 Nexcent ltd.<br />
+            All rights reserved
+          </p>
+
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="17" height="17">
+                  <use
+                    class="socials__icon"
+                    href="./img/icons.svg#icon-social-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="17" height="17">
+                  <use
+                    class="socials__icon"
+                    href="./img/icons.svg#icon-social-2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="17" height="17">
+                  <use
+                    class="socials__icon"
+                    href="./img/icons.svg#icon-social-3"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width="17" height="17">
+                  <use
+                    class="socials__icon"
+                    href="./img/icons.svg#icon-social-4"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- company -->
+        <div class="footer__thumb company">
+          <p class="footer__thumb-title">Company</p>
+          <ul class="footer__thumb-list">
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">About us</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Blog</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Contact us</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Pricing</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- support -->
+        <div class="footer__thumb support">
+          <p class="footer__thumb-title">Support</p>
+          <ul class="footer__thumb-list">
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Help center</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Terms of service</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Legal</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Privacy policy</a>
+            </li>
+            <li class="footer__thumb-item">
+              <a href="#" class="footer__thumb-link">Status</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- subscribe -->
+        <div class="footer__thumb subscribe">
+          <label class="footer__thumb-title label" for="email"
+            >Stay up to date</label
+          ><input
+            class="subscribe__input"
+            type="email"
+            name="client-email"
+            id="email"
+            placeholder="Your email address"
+            required
+          /><button type="submit">
+            <svg class="submit__btn" width="18" height="18">
+              <use href="./img/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
