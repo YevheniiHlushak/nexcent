@@ -1,0 +1,35 @@
+.achievements__wrapper {
+  width: 540px;
+}
+
+.achievements__list {
+ width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.achievements__item {
+  display: flex;
+  align-items: center;
+  flex-basis: calc((100% - 30px) / 2);
+  height: 60px;
+}
+
+.achievements__icon {
+  margin-right: 16px;
+}
+
+.achievements__points {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: calc(36 / 28);
+  color: var(--primary-title-color);
+}
+
+.achievements__decription {
+  line-height: calc(26 / 16);
+  color: var(--primary-text-color);
+}

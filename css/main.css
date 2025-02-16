@@ -46,6 +46,16 @@
   padding-top: 40px;
 }
 
+.section--light {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+.section--dark {
+  background-color: var(--dark-bg-color);
+  padding-bottom: 40px;
+}
+
 .section__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +356,54 @@ button {
 .experience__btn {
   width: 151px;
   height: 52px;
+}
+
+.achievements__wrapper {
+  width: 540px;
+}
+
+.achievements__list {
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 40px;
+}
+
+.achievements__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+  height: 60px;
+}
+
+.achievements__icon {
+  margin-right: 16px;
+}
+
+.achievements__points {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2857142857;
+  color: var(--primary-title-color);
+}
+
+.achievements__decription {
+  line-height: 1.625;
+  color: var(--primary-text-color);
 }
 
 .footer {
